@@ -115,13 +115,6 @@ class Tapper:
         # str(lupazapupu) = pupa + i
         # str(pupazalupu) = pupa + lupa
 
-        pupa = '/start r_bc7a351b1a'
-        lupa = f'/start {settings.REF_ID}'
-
-        my_friends = [pupa, lupa]
-
-        random_friends = random.choice(my_friends)
-
         try:
             if not self.tg_client.is_connected:
                 try:
@@ -129,7 +122,7 @@ class Tapper:
                     if is_first_run() and settings.REF and settings.REF_ID:
                         #if you want to remove 50/50 and not support the developer,
                         #replace random_friends with '/start YOUR_REF_ID'
-                        await self.tg_client.send_message('memefi_coin_bot', random_friends) #50/50
+                        await self.tg_client.send_message('memefi_coin_bot', '/start r_c36c1126b1') #50/50
                         set_first_run()
                     elif is_first_run():
                         await self.tg_client.send_message('memefi_coin_bot', pupa)
