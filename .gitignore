@@ -1,3 +1,9 @@
+#project
+
+referral.txt
+user_agents.json
+clancheck.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
